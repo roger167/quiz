@@ -5,15 +5,16 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version: 2.2.2p95
+* Rails version: 4.2.6
 
 * System dependencies
 
-* Configuration
+* Configuration: Boostrap-CkEditor and HAML gems
 
-* Database creation
+* Database creation: Sql Lite3
 
-* Database initialization
+* Database initialization: Bundler install (for installing gems files) and Run rake db:migrate before run rails server.
 
 * How to run the test suite
 
