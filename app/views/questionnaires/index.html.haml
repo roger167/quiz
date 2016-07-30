@@ -1,0 +1,19 @@
+%h1.text-center Listing Questionnaires
+
+%table.table.table-bordered
+  %thead
+    %tr
+      %th ID
+      %th Title
+      %th
+  %tbody
+    - @questionnaires.each do |questionnaire|
+      %tr
+        %td= questionnaire.id
+        %td= questionnaire.title
+        %td= link_to 'Show', questionnaire, class:'color_blue'
+
+%br
+
+= link_to 'Resolve New Questionnaire', new_questionnaire_path, class:'btn btn-primary'
+= link_to 'Welcome', '/',class:'btn btn-primary'
